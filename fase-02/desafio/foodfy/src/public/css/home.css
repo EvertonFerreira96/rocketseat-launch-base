@@ -1,0 +1,92 @@
+
+.carrosel-content {
+  background: #FBDFDB;
+  border-radius: 30px;
+  border-radius: 30px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 365px;
+
+}
+
+.carrosel-content .text-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 300px;
+  padding: 0 50px;
+
+}
+
+.text-content h1 {
+  font-family: Roboto-Bold;
+  font-size: 32px;
+  color: #111111;
+  padding: 10px 0;
+
+}
+.text-content p{
+  opacity: 0.7;
+  font-family: Roboto-Regular;
+  font-size: 18px;
+  color: #000000;
+  line-height: 28px;
+}
+
+.foods {
+  margin: 50px 0 20px;
+}
+
+.foods h2 {
+  font-family: Roboto-Bold;
+  font-size: 24px;
+  color: #111111;
+  margin: 0 0 20px;
+}
+
+
+.food { 
+  margin: 0 0 30px;
+  
+}
+
+.foods .foods-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: flex-start;
+}
+
+.food .text-content h3 {
+
+  font-family: Roboto-Regular;
+  font-size: 18px;
+  color: #111111;
+}
+
+.food .text-content p {
+
+  font-family: Roboto-Regular;
+  font-size: 14px;
+  color: #777777;
+}
+
+.image-content {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.food .image-content img{
+  width: 300px;
+  border-radius: 15px;
+}
+
+.food .text-content{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  max-width: 300px;
+  margin: 20px 0 0;
+}

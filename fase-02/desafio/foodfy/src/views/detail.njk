@@ -1,0 +1,60 @@
+{% extends "header.njk" %}
+{% extends "footer.njk" %}
+{% extends "layout.njk" %}
+
+{% block metadata %}
+  <link rel="stylesheet" href="/detail.css">
+  <link rel="stylesheet" href="/header.css">
+  <link rel="stylesheet" href="/footer.css">
+{% endblock %}
+
+{% block content %}
+  <section class="carrosel-content" style="background-image: url('../{{food.img}}'"></section>
+
+  <section class='recipe'>
+    <div class="header-recipe">
+      <h1>{{food.title}}</h1>
+      <h3>{{food.actor}}</h3>
+    </div>
+  </section>
+
+  <section id='ingredients' class="ingredients">
+    <div class="header-ingredients">
+      <h4>Ingredients</h4>
+      <i class="material-icons">visibility_off</i>
+    </div>
+    <div class="content-ingredients">
+      <ul>
+        <li>  3 kg de carne moída (escolha uma carne magra e macia);                                                                       </li>
+        <li>  300 g de bacon moído; </li>
+        <li>  1 ovo; </li>
+        <li>  3 colheres (sopa) de farinha de trigo; </li>
+        <li>  3 colheres (sopa) de tempero caseiro: feito com alho, sal, cebola, pimenta e cheiro verde processados no liquidificador; </li>
+        <li>  30 ml de água gelada; </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="preparationmode">
+    <div class="header-preparation-mode">
+      <h4>Modo de Preparo</h4>
+      <i class="material-icons">visibility_off</i>
+    </div>
+    <div class="content-preparation-mode">
+      <p>Preaqueça a chapa, frigideira ou grelha por 10 minutos antes de levar os hambúrgueres. Adicione um pouquinho de óleo ou manteiga e não amasse os hambúrgueres! Você sabia que a receita que precede o hambúrguer surgiu no século XIII, na Europa? A ideia de moer a carne chegou em Hamburgo no século XVII, onde um açogueiro resolveu também temperá-la. Assim, a receita foi disseminada nos Estados Unidos por alemães da região. Lá surgiu a ideia de colocar o hambúrguer no meio do pão e adicionar outros ingredientes, como queijom tomates e alface.</p>
+    </div>
+  </section>
+
+  <section class="informations">
+    <div class="header-informations">
+      <h4>Modo de Preparo</h4>
+      <i class="material-icons">visibility_off</i>
+    </div>
+    <div class="content-informations">
+      <p>Preaqueça a chapa, frigideira ou grelha por 10 minutos antes de levar os hambúrgueres. Adicione um pouquinho de óleo ou manteiga e não amasse os hambúrgueres! Você sabia que a receita que precede o hambúrguer surgiu no século XIII, na Europa? A ideia de moer a carne chegou em Hamburgo no século XVII, onde um açogueiro resolveu também temperá-la. Assim, a receita foi disseminada nos Estados Unidos por alemães da região. Lá surgiu a ideia de colocar o hambúrguer no meio do pão e adicionar outros ingredientes, como queijom tomates e alface.</p>
+    </div>
+  </section>
+
+  <script src="/detail.js"></script>
+
+{% endblock %}

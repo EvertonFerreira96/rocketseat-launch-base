@@ -1,0 +1,39 @@
+{% extends "header.njk" %}
+{% extends "footer.njk" %}
+{% extends "layout.njk" %}
+
+{% block metadata %}
+  <link rel="stylesheet" href="/home.css">
+  <link rel="stylesheet" href="/header.css">
+  <link rel="stylesheet" href="/footer.css">
+{% endblock %}
+
+{% block content %}
+  <section class="carrosel-content">
+    <div class="text-content">
+      <h1>As melhores receitas</h1>
+      <p>Aprenda a construir os melhores pratos com receitas criadas por profissionais do mundo inteiro.</p>
+    </div>
+    <div class="image-content">
+      <img src="/chef.png" alt="garçom com bandeja">
+    </div>
+  </section>
+
+  <section class='foods'>
+    <h2>Mais acessadas</h2>
+    <div class="foods-content">
+      {% for food in foods %}
+        <div class="food">
+          <div class="image-content">
+            <img src="/food/{{food.img}}" alt="">
+          </div>
+          <div class="text-content">
+            <h3>{{food.title}}</h3>
+            <p>{{food.actor}}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </section>
+
+{% endblock %}

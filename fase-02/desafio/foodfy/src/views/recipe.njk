@@ -1,0 +1,53 @@
+{% extends "modal.njk" %}
+{% extends "header.njk" %}
+{% extends "footer.njk" %}
+{% extends "layout.njk" %}
+
+{% block metadata %}
+  <link rel="stylesheet" href="/modal.css">
+  <link rel="stylesheet" href="/header.css">
+  <link rel="stylesheet" href="/footer.css">
+  <link rel="stylesheet" href="/recipe.css">
+{% endblock %}
+
+{% block content %}
+  <section class='foods'>
+    <div class="foods-content">
+      {% for food in foods %}
+        <div class="food" id={{food.id}}>
+          <div class="image-content">
+            <img src="/food/{{food.img}}" alt="">
+          </div>
+          <div class="text-content">
+            <h3>{{food.title}}</h3>
+            <p>{{food.actor}}</p>
+          </div>
+        </div>
+      {% endfor %}
+      {% for food in foods %}
+        <div class="food" id={{food.id}}>
+          <div class="image-content">
+            <img src="/food/{{food.img}}" alt="">
+          </div>
+          <div class="text-content">
+            <h3>{{food.title}}</h3>
+            <p>{{food.actor}}</p>
+          </div>
+        </div>
+      {% endfor %}
+      {% for food in foods %}
+        <div class="food" id={{food.id}}>
+          <div class="image-content">
+            <img src="/food/{{food.img}}" alt="">
+          </div>
+          <div class="text-content">
+            <h3>{{food.title}}</h3>
+            <p>{{food.actor}}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </section>
+
+
+{% endblock %}

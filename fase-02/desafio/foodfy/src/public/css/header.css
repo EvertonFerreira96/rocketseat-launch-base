@@ -1,0 +1,32 @@
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 800px;
+}
+header .logo-content {
+  padding: 0 120px 0 0;
+}
+
+header .logo-content img {
+  cursor: pointer;
+}
+
+header .menu-content {
+  display: flex;
+  flex-direction: row;
+}
+
+header .menu-content a {
+  font-family: Roboto-Regular;
+  font-size: 16px;
+  color: #111111;
+  padding: 38px 30px 38px 0;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+header .menu-content a .active {
+  font-weight: 500;
+}
