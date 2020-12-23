@@ -1,0 +1,59 @@
+{% extends "layout.njk" %}
+
+
+{% block head %}
+    <title>Gym Manager</title> 
+    <link rel="stylesheet" type="text/css" href="/instructors.css" >
+{% endblock %}
+
+
+{% block content %}
+  <form class="card"action="/instructors" method="POST" > 
+    <section class="avatar">
+    </section>
+    <section class="details">
+      <h3>Novo instrutor</h3>
+      <div class="item">
+        <div>Avatar url</div>
+        <div>
+          <input type="url"
+                 name="avatar-url">
+        </div>
+      </div>
+      <div class="item">
+        <div>Instructor</div>
+        <div>
+          <input type="text"
+                 name="name">
+        </div>
+      </div>
+      <div class="item">
+        <div>Data de Nascimento</div>
+        <div>
+          <input type="date" 
+                 name="birth">
+        </div>
+      </div>
+      <div class="item">
+        <div>Sexo</div>
+        <div class="list">
+          <span>
+            <input type="radio" name="gender" id="M" checked>   
+            Masculino
+          </span>
+          <span>
+            <input type="radio" name="gender" id="F"> 
+            Feminino
+          </span>
+        </div>
+      </div>
+      <div class="item">
+        <div>Área de Atuação</div>
+        <div>
+          <input type="text" name="services">
+        </div>
+      </div>
+      <button type="submit">Salvar</button>
+    </section>
+  </form>
+{% endblock content %}

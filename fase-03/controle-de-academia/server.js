@@ -13,16 +13,14 @@ server.set('view engine', 'njk');
 
 
 nunjucks.configure('views', {
-  autoescape: false,
   express: server,
-  watch: true,
-  noCache: false
+  autoescape: false,
+  noCache: true
 });
 
 
 server.use(routes);
 
-server.use((req,res) => res.status(404).render('about') )
 
 server.listen(5000, () => console.log('started at 5000 port 🚀') );
 
